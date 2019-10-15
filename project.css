@@ -1,0 +1,63 @@
+.content 
+{
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 50em;
+
+}
+
+.imagelist
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.imagelist > *
+{
+    margin: 0 auto;
+    flex: 1 1 23em;
+    max-width: 40em;
+    padding: 1em;
+}
+
+.imagelist *
+{
+    width: 100%;
+}
+
+
+.trailer
+{  
+    width: 100%;
+    margin: auto;
+}
+
+.caption
+{
+    text-align: center;
+    margin: auto;
+    padding-top: 0.3em;
+    font-size: 1em;
+    font-style: italic;
+}
+
+
+h1.title
+{
+    font-size: 2.5em;
+    /* text-align: center; */
+    margin: auto;
+    padding-bottom: 0.8em;
+}
+
+section.description
+{
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    line-height: 1.3em;
+    font-size: 1.2em;
+}
+
+
+

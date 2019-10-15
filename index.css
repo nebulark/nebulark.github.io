@@ -1,0 +1,48 @@
+.content 
+{
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 80em;
+    line-height: 1.3em;
+    font-size: 1.2em;
+}
+
+.projectlist
+{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.projectlist h2
+{
+    margin-top: 1em;  
+}
+
+.projectlist > *
+{
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1 1 30em;
+    max-width: 35em;
+    padding: 1em;
+}
+
+a img:hover
+{
+    width: 95%;  height: auto;
+    padding-left: 2.5%;
+    filter: sepia(60%);
+}
+
+.caption
+{
+    text-align: center;
+    margin: auto;
+    padding-top: 0.3em;
+}
+
+
+
+

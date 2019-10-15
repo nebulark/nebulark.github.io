@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em
+}
+
+nav header:hover {
+    cursor: default;
+}
+
+nav header
+{
+    border-radius: 7em;
+    width: 4em;
+    height: 4em;
+    margin: 1em;
+    background: white;
+
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    color: orange;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+nav > *
+{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+    bottom: 0;
+}
+
+nav a
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em
+}
+nav a:hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 1em;
+}
+
+.aspect169
+{
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.aspect169 > *
+{
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.aspect169 *
+{
+    width: 100%;
+}
+
+.center
+{
+    text-align: center;
+    margin: auto;
+}

@@ -1,0 +1,9 @@
+.content 
+{
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 50em;
+    line-height: 1.3em;
+    font-size: 1.2em;
+}

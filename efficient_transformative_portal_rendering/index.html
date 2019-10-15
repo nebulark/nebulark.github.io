@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>Efficient Transformative Portal Rendering</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Efficient Transformative Portal Rendering Project Page">
+  <meta name="author" content="Florian Schmiderer">
+
+  <link rel="stylesheet" href="../project.css">
+  <link rel="stylesheet" href="../common.css">
+
+</head>
+
+<body>
+  <nav>
+    <a href="/index.html">Projects</a><header><p>Florian<br> Schmiderer</p></header><a href="/about.html">About</a>
+  </nav>
+  <article class="content">
+    <header>
+      <h1 class ="title">Efficient Transformative Portal Rendering</h1>
+      
+      <div class="trailer">
+        <div class="aspect169">
+          <iframe src="https://www.youtube.com/embed/gQ6XgoyVmrg" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </header>
+    <section class="description">
+      <p>
+        Transformative portals are a special kind of portal that connects two arbitrary locations with each other.
+        The connected location can be seen through a transformative portal. By traveling through the portal, the other location can be reached.
+        Transformative portals allow for special gameplay mechanics in video games, seamless traversal between virtual worlds or can be used as locomotion technique for Virtual Reality applications.        
+      </p>
+
+      <p>
+        In my thesis I focused on the rendering of such portals. I created a prototype to test a new approach.
+        Previous works used a "depth-first" portal render order, which fully renders the contents of one portal, before rendering the rest of a scene.
+        My approach uses "breadth-first" order, which has its own advantages and disadvantages. One main advantage is the possibility to use instanced rendering to reduce the amount of draw calls.
+      </p>
+
+      <p>
+        Additionally, the number of previously drawn portals can be found within a fragment shader. This works similar to an occlusion query.
+        With this technique the number of drawn portals was reduced.         
+      </p>
+
+      <p>
+        The prototype supports multiple transformative portals of arbitrary shape and is real-time capable
+        Multiple portal recursions are rendered, and users can move around in the scene and through portals.
+        The prototype was created using the <a href="https://www.khronos.org/vulkan/">Vulkan Graphics API</a> and C++.
+        The scenes were created using the <a href="www.unrealengine.com/">Unreal Engine 4</a> Editor and exported with a custom script.
+      </p>
+
+      <p>
+        You can find the thesis' latest corrected version <a href="efficient_transformative_portal_rendering_corrected.pdf">here</a>. The originally submitted version can be found <a
+        href="https://github.com/nebulark/master_thesis/releases/download/submission/efficient_transformative_portal_rendering.pdf">here</a>.
+      </p>
+
+      <p>
+        The Github repository for the prototype can be found <a href="https://github.com/nebulark/master_project">here</a>.        
+      </p>
+
+    </section>
+
+    <article>
+      <header>
+        <h1>Visual Impressions</h1>
+      </header>
+      <section class="imagelist">
+
+        <section>
+            <img src="images/nonplanar_r0.png" alt="Screenshot with disabled half-sphere portal">
+            <p class="caption">Screenshot with disabled half-sphere portal</p>
+          </section>
+
+        <section>
+          <img src="images/nonplanar.png" alt="Screenshot with enabled half-sphere portal">
+          <p class="caption">Screenshot with enabled half-sphere portal</p>
+        </section>
+
+        <section>
+            <img src="images/two_portal_recursion.png" alt="Multiple recursions using two portals">
+            <p class="caption">Multiple recursions using two portals</p>
+        </section>
+
+        <section>
+            <img src="images/four_portal_recursion.png" alt="Multiple recursions using four portals">
+            <p class="caption">Multiple recursions using four portals</p>
+        </section>
+
+       
+
+        <!-- Empty elements to keep all boxes same size -->
+        <section></section>
+        <section></section>
+        <section></section>
+      </section>
+    </article>
+  </article>
+</html>
